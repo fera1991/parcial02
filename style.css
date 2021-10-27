@@ -1,0 +1,14 @@
+.cuadrado{
+    width: 120px;
+    height: 20px;
+    background-color: brown;
+    position: fixed;
+}
+
+.cuadrado2{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    position: fixed;
+    overflow: auto;
+}
