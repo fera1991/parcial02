@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCA cell phones</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <section class="section-home" id="section-home">
+            <nav class="options">
+                <a href="#section-home">Home</a>
+                <a href="#section-add">Add product</a>
+                <a href="#container-card">Shop</a>
+                <a href="#"><i class="far fa-heart"></i></a>
+            </nav>
+    
+    <section class="principal-header" id="principal-header">
+        <div class="container">
+            <h1>Welcome to UCA cell phones</h1>
+            <h2>There's so much in store</h2> 
+    </section>
+        
+    </header>
+
+    <main>
+        <form class="form-data" id="form-data">
+            <div class="container">
+                <section class="section-add" id="section-add">
+                <h3>Add product</h3><br/>
+                    <div class="form-Add">
+                        <div class="form-groud">
+                            <b><label for = "imgInput">Enter cell phone image: </label>
+                            <input type="text" id="imgInput" placeholder="url type" name="img"><br/>
+                        </div>
+
+                        <div class="form-groud">
+                            <b><label for = "nameInput">Enter cell phone name: </label>
+                            <input type="text" id="nameInput" placeholder="name" name="name"><br/>
+                        </div>
+
+                        <div class="form-groud">
+                            <label for = "brandInput">Enter cell phone brand: </label>
+                            <input type="text" id="brandInput" placeholder="brand" name="brand"><br/>
+                        </div>
+
+                        <div class="form-groud">
+                            <label for = "selectOs">Select operating system</label>
+                            <input type="text" id="OSInput" placeholder="Operating system" name="OS">
+                        </div>
+
+                        <div class="form-groud">
+                            <label for = "processorInput">Enter processor: </label>
+                            <input type="text" id="processorInput" placeholder="processor" name="processor"><br/>
+                        </div>
+                        
+                        <div class="form-groud">
+                            <label for = "priceInput">Enter price: </label>
+                            <input type="number" id ="priceInput" placeholder="price"  min="0" step="0.01" name="price"><br/>
+                        </div>
+                        
+                        <button id="AddBtn" type="submit" onclick="submit">Add product</button>
+                    </div> 
+                </section>
+            </div>
+        </form>
+        <section>
+            <form id="Form">
+                <div id="search">
+                        <div id="inputAndBtn" class="stylebox">
+                        <input id="inputSearch" class="stylebox" name="formSearch" placeholder="Enter your search">
+                        <div id="styleSearch">
+                            <select name="selectpest" id="select1" class="stylebox">
+                                <option value="Nombre">Name</option>
+                                <option value="Marca">Brand</option>
+                                <option value="Procesador">Processor</option>
+                                <option value="sistemaOperativo">Operating system</option>
+                            </select>
+                        </div>
+                        <button id="btnSearch" class="stylebox" type="button"><i class="fas fa-search"></i></button>
+                        <button onclick="addHtmldata()" id="btnReset" class="stylebox" type="button">Return <i class="fas fa-undo-alt"></i></button>
+                        </div>
+                </div>
+            </form>
+            <div id="container">
+            </div>
+        </section>
+        </nav>
+    </section>
+</div>
+
+    <div class="container-add">
+        <h3>Products</h3>
+        <section class="container-card" id="container-card">
+    </section>
+
+    <script src="https://kit.fontawesome.com/f15bc0108c.js">
+    </script>
+    <script defer src="JS/main.js"></script>
+</body>
+</html>

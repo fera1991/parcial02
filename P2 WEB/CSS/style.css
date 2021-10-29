@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 10px 0;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/1.jpg);
+    background-color: #000000;
+    opacity: .9;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: .7;
+    z-index: -1;
+}
+
+.options{
+    text-align: center;
+    padding: 30px 10px 0 0;
+    cursor: pointer;
+}
+
+.options > a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.options > a:hover{
+    text-decoration: none;
+}
+
+header .principal-header{
+    height: 500px;
+    width: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+  }
+
+.form-data{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    text-align: left;
+    display: inline;
+}
+
+main .section-add{
+    width: 60%;
+    max-width: 400px;
+    margin: auto;
+    background: rgb(173, 167, 167);
+    border-radius: 11px;
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-groud{
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    border-radius: 7px;
+    text-align: center;
+}
+
+input {
+    margin-bottom: 10px;
+    margin-left: 40px;
+    padding: 7px;
+    width: 70%;
+    border: 1px solid rgb(34, 33, 33);
+    border-radius: 5px;
+    width:70%; 
+    height:10%;
+    text-align: center;
+}
+
+select{
+    margin-bottom: 10px;
+    padding: 7px;
+    width: 70%;
+    border: 1px solid rgb(34, 33, 33);
+    border-radius: 5px;
+    width:70%; 
+    height:10%;
+    text-align: center;
+}
+
+button{
+    background: rgb(57, 57, 87);
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+
+#AddBtn{
+    width:100%; 
+    height:10%;
+}
+
+.container-card{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
+}
+
+.container-card .card{
+    background: rgb(194, 192, 192);
+    color: rgb(0, 0, 0);
+    width: 220px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+}
+
+.container-card .card img{
+    height: 220px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.container-card .card h5{
+    padding: 0.1rem 1rem;
+    font-size: 13px;
+    font-weight: 300;
+    color:black;
+}
+
+.container-card .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color:rgb(34, 34, 148);
+}
+
+.card:hover{
+    background: rgb(138, 138, 138);;
+}
+
+.items{
+    border: 3px black solid;
+    border-radius: 15px;
+     margin: 10px;
+    width: 300px;
+}
+
+.row
+{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.imgItem img{
+    height: 6em;
+}
+.textItem{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 12px;
+}
+.textItem div{
+    margin-left: 0.5rem;
+}
+
+.stylebox{
+    border-radius: 7px;
+    font-size: 13px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#search{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10px 0 0;
+}
+#inputAndBtn{
+    margin-bottom: 10px;
+    padding: 7px;
+    width: 100%;
+    height:100%;
+    text-align: center;
+}
+
+#btnAddWish{
+    font-size: 12px;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+#btnSearch{
+    background-color: #4c7769;
+    border-radius: 7px;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5.5px 8.5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: center;
+    position: relative;
+}
+
+#btnSearch:hover {
+    background-color: #496b45;
+    color: rgb(255, 255, 255);
+}
+
+#btnReset{
+    background-color: #4c7769;
+    border-radius: 7px;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5.5px 8.5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: center;
+    position: relative;
+}
+#btnReset:hover {
+    background-color: #496b45;
+    color: #fff;
+}
